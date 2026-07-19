@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Movie Night</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="background"></div>
+
+<!-- Loading -->
+
+<section id="loading" class="page active">
+
+<div class="loadingBox">
+
+<h1>🍿</h1>
+
+<h2 id="loadingText">
+
+Looking for the perfect movie...
+
+</h2>
+
+<div class="loader">
+
+<div class="progress"></div>
+
+</div>
+
+<p>Please wait...</p>
+
+</div>
+
+</section>
+
+<!-- Intro -->
+
+<section id="intro" class="page">
+
+<div class="card">
+
+<p class="eyebrow">
+
+MOVIE NIGHT
+
+</p>
+
+<h1>
+
+Calix,
+
+<br><br>
+
+I've been wanting to ask you something.
+
+<br><br>
+
+I thought a message
+wouldn't be memorable enough.
+
+</h1>
+
+<p class="question">
+
+Would you let me take you
+on a cinema date?
+
+🍿
+
+</p>
+
+<div class="buttons">
+
+<button id="yesBtn">
+
+🎟️ Book the tickets
+
+</button>
+
+<button id="noBtn">
+
+Maybe not
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Fake Booking -->
+
+<section id="booking" class="page">
+
+<div class="loadingBox">
+
+<h1>🎬</h1>
+
+<h2>
+
+Planning our movie night...
+
+</h2>
+
+<div class="loader">
+
+<div class="progress bookingProgress"></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Movie -->
+
+<section id="movie" class="page">
+
+<div class="card">
+
+<h1>
+
+Choose a movie
+
+</h1>
+
+<div class="movieGrid">
+
+<div class="movie selected">
+
+<div class="emoji">
+
+🍌
+
+</div>
+
+<h2>
+
+Minions
+
+</h2>
+
+<p>
+
+Recommended.
+
+I have a feeling
+you’ll choose this one.
+
+</p>
+
+</div>
+
+<div class="movie">
+
+<div class="emoji">
+
+🧸
+
+</div>
+
+<h2>
+
+Toy Story
+
+</h2>
+
+</div>
+
+<div class="movie">
+
+<div class="emoji">
+
+💀
+
+</div>
+
+<h2>
+
+Evil Dead Burn
+
+</h2>
+
+</div>
+
+<div class="movie">
+
+<div class="emoji">
+
+🌊
+
+</div>
+
+<h2>
+
+Moana
+
+</h2>
+
+</div>
+
+</div>
+
+<button class="next">
+
+Continue
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Date -->
+
+<section id="date" class="page">
+
+<div class="card">
+
+<h1>
+
+When are you free?
+
+</h1>
+
+<input type="date" id="datePicker">
+
+<button class="next">
+
+Continue
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Time -->
+
+<section id="time" class="page">
+
+<div class="card">
+
+<h1>
+
+Pick a showtime
+
+</h1>
+
+<div class="timeGrid">
+
+<button class="time selectedTime">
+
+12:40 PM
+
+</button>
+
+<button class="time">
+
+5:00 PM
+
+</button>
+
+<button class="time">
+
+7:00 PM
+
+</button>
+
+</div>
+
+<button class="next">
+
+Continue
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Snacks -->
+
+<section id="snacks" class="page">
+
+<div class="card">
+
+<h1>
+
+Snacks?
+
+</h1>
+
+<div class="snackGrid">
+
+<button class="snack">
+
+🍿 Popcorn
+
+</button>
+
+<button class="snack">
+
+🥤 Drinks
+
+</button>
+
+<button class="snack">
+
+🍫 Chocolate
+
+</button>
+
+<button class="snack">
+
+🍟 Fries
+
+</button>
+
+<button class="snack">
+
+🍬 Candy
+
+</button>
+
+</div>
+
+<button id="finish">
+
+Finish
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Ticket -->
+
+<section id="ticketPage" class="page">
+
+<div class="ticket">
+
+<h2>
+
+🎟️ MOVIE NIGHT
+
+</h2>
+
+<div class="line"></div>
+
+<p id="ticketMovie">
+
+🎬 Minions
+
+</p>
+
+<p id="ticketDate">
+
+📅
+
+</p>
+
+<p id="ticketTime">
+
+🕖
+
+</p>
+
+<p id="ticketSnack">
+
+🍿
+
+</p>
+
+<div class="line"></div>
+
+<p>
+
+Seat A
+
+<br>
+
+Calix
+
+</p>
+
+<br>
+
+<p>
+
+Seat B
+
+<br>
+
+Reserved for me.
+
+</p>
+
+<div class="line"></div>
+
+<p class="small">
+
+Thanks for saying yes.
+
+<br><br>
+
+I could've asked you through a message,
+
+but I wanted to ask in a way that felt a little more memorable.
+
+<br><br>
+
+See you at the cinema. 🍿
+
+</p>
+
+<button id="ending">
+
+See you soon.
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Ending -->
+
+<section id="endingPage" class="page">
+
+<div class="ending">
+
+<h2>
+
+Now all that's left...
+
+</h2>
+
+<h1>
+
+is to buy the tickets.
+
+🎟️
+
+</h1>
+
+<p>
+
+See you soon,
+
+Calix.
+
+🍿
+
+</p>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
